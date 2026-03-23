@@ -1,0 +1,26 @@
+@"
+# MLflow artifacts
+mlruns/
+mlartifacts/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+.env
+.venv/
+
+# Data (never commit raw data to git)
+data/*.csv
+data/*.parquet
+
+# Models (use MLflow registry instead)
+models/*.pkl
+models/*.joblib
+
+# IDE
+.vscode/
+.idea/
+"@ | Out-File -FilePath .gitignore -Encoding utf8

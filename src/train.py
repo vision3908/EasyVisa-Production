@@ -283,8 +283,7 @@ def train(
                 "feature":    X_train.columns,
                 "importance": model.feature_importances_,
             }).sort_values("importance", ascending=False)
-
-            importance_path = "/tmp/feature_importances.csv"
+            importance_path = "feature_importances.csv"
             importance_df.to_csv(importance_path, index=False)
             mlflow.log_artifact(importance_path, artifact_path="reports")
             log.info("Top 5 features:\n%s", importance_df.head().to_string(index=False))

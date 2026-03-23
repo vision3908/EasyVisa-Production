@@ -23,4 +23,5 @@ models/*.joblib
 # IDE
 .vscode/
 .idea/
+feature_importances.csv
 "@ | Out-File -FilePath .gitignore -Encoding utf8

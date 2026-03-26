@@ -2,6 +2,7 @@
 # MLflow artifacts
 mlruns/
 mlartifacts/
+mlflow.db
 
 # Python
 __pycache__/
